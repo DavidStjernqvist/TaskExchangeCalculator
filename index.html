@@ -26,7 +26,7 @@
             <h3> Exhange Calculator:</h3>
             <div class="row">
                 <div class="col-sm">
-                    <input type="number" v-model="inputAmount">
+                    <input type="number" v-model="inputAmount" @keyup="calculateCurrency" @change="calculateCurrency">
                 </div>
                 <div class="col-sm">
                     <select v-model="exg" @change="requestData">
